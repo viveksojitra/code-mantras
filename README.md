@@ -143,28 +143,6 @@ greetings('bob joe')  // Returns: "Think like a computer, dream like a human! �
 - **🚀 Build Scripts** - Make your build process more enjoyable
 - **💼 Team Tools** - Boost team morale in internal tools
 
-## 🎨 Customization
-
-Want to extend Code Mantras? Here's how you can build upon it:
-
-```javascript
-import { greetings } from '@viveksojitra/code-mantras';
-
-// Create a custom motivational CLI
-function dailyMotivation() {
-  const message = greetings(process.env.USER || 'Developer');
-  console.log(`
-  ╔════════════════════════════════════════════════╗
-  ║  🌟 DAILY DEVELOPER MOTIVATION                ║  
-  ╠════════════════════════════════════════════════╣
-  ║  ${message.padEnd(42)}                        ║ 
-  ╚════════════════════════════════════════════════╝
-  `);
-}
-
-dailyMotivation();
-```
-
 ## 🧪 Testing
 
 Code Mantras comes with comprehensive tests to ensure reliability:
