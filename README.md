@@ -28,9 +28,6 @@ Code Mantras delivers **100+ insperitional quotes** designed specifically for de
 ### Installation
 
 ```bash
-# Install from GitHub Packages
-npm install @viveksojitra/code-mantras
-
 # Or install from npm
 npm install code-mantras
 ```
