@@ -35,7 +35,7 @@ npm install code-mantras
 ### Usage
 
 ```javascript
-import { greetings } from '@viveksojitra/code-mantras';
+import { greetings } from 'code-mantras';
 
 // Get a random motivational message
 console.log(greetings());
@@ -55,14 +55,14 @@ console.log(greetings('john doe'));
 ### 🖥️ Terminal Greeting
 ```javascript
 // Add to your .zshrc or .bashrc
-import { greetings } from '@viveksojitra/code-mantras';
+import { greetings } from 'code-mantras';
 console.log(`\n${greetings('YourName')}\n`);
 ```
 
 ### 🤖 CLI Tool Integration
 ```javascript
 #!/usr/bin/env node
-import { greetings } from '@viveksojitra/code-mantras';
+import { greetings } from 'code-mantras';
 
 console.log('🚀 Starting development server...');
 console.log(`💭 ${greetings()}`);
@@ -74,15 +74,15 @@ console.log(`💭 ${greetings()}`);
 // package.json
 {
   "scripts": {
-    "start": "node -e \"import('@viveksojitra/code-mantras').then(m => console.log(m.greetings()))\" && your-start-command",
-    "build": "node -e \"import('@viveksojitra/code-mantras').then(m => console.log(m.greetings()))\" && your-build-command"
+    "start": "node -e \"import('code-mantras').then(m => console.log(m.greetings()))\" && your-start-command",
+    "build": "node -e \"import('code-mantras').then(m => console.log(m.greetings()))\" && your-build-command"
   }
 }
 ```
 
 ### 🎨 React/Vue Apps
 ```javascript
-import { greetings } from '@viveksojitra/code-mantras';
+import { greetings } from 'code-mantras';
 
 function WelcomeComponent() {
   const motivation = greetings('Developer');
